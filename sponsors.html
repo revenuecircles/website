@@ -38,8 +38,8 @@ nav{max-width:1240px;margin:0 auto;padding:22px 24px;display:flex;align-items:ce
 .small{font-size:16px;color:rgba(31,27,22,.82)}
 .section-head{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;max-width:760px;margin:0 auto}
 .section-head h2{font-size:clamp(32px,4vw,48px);line-height:1.18}
-.tiers{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(10,auto);column-gap:24px;margin-top:40px}
-.tier{background:#FBF8F2;border:1px solid var(--line);display:grid;grid-row:span 10;grid-template-rows:subgrid;row-gap:0;padding:36px 30px 30px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(11,auto);column-gap:24px;margin-top:40px}
+.tier{background:#FBF8F2;border:1px solid var(--line);display:grid;grid-row:span 11;grid-template-rows:subgrid;row-gap:0;padding:36px 30px 30px}
 .tier.feature{border:1px solid var(--gold);box-shadow:0 0 0 6px var(--ivory),0 0 0 7px rgba(168,138,74,.5)}
 .tier .head{display:flex;flex-direction:column;padding-bottom:18px}
 .tier .num{font-family:var(--sans);font-size:13px;letter-spacing:.2em;color:var(--gold-d)}
@@ -61,7 +61,8 @@ nav{max-width:1240px;margin:0 auto;padding:22px 24px;display:flex;align-items:ce
 .close{padding:64px 24px 72px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
 footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-family:var(--sans);font-size:11px;letter-spacing:.14em;color:rgba(31,27,22,.7)}
 @media (max-width:900px){.facts{grid-template-columns:1fr 1fr}.tier .rl,.tier .rv{white-space:normal}.tiers{grid-template-columns:1fr;grid-template-rows:none;row-gap:24px}.tier{grid-row:auto;grid-template-rows:none;display:flex;flex-direction:column}.rules{grid-template-columns:1fr 1fr}.tier.feature{box-shadow:none}}
-@media (max-width:700px){
+.br-wide{display:inline}
+@media (max-width:700px){.br-wide{display:none}
 .facts{grid-template-columns:1fr}
 .rules{grid-template-columns:1fr}
 .navlinks a:not(:last-child){display:none}
@@ -167,12 +168,12 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font
 <div class="inner">
 <span class="eyebrow">THE RULES</span>
 <h2>Candid conversation comes&nbsp;first.</h2>
-<p class="small" style="font-size:18px">Members join for candid conversation with peers. These rules keep it that way, and they apply to every sponsor.</p>
+<p class="small" style="font-size:18px">Members join for candid conversation with peers. These rules keep it that way,<br class="br-wide"> and they apply to every&nbsp;sponsor.</p>
 <div class="rules">
 <div><span class="label">THE ROOM</span><span class="small">No one pitches at any&nbsp;session.</span></div>
 <div><span class="label">THE LIST</span><span class="small">Member names and contact details stay with&nbsp;us.</span></div>
 <div><span class="label">THE OFFERS</span><span class="small">Members opt in to every offer. We send each&nbsp;one.</span></div>
-<div><span class="label">THE CAP</span><span class="small">At most 1 sponsor offer per member each&nbsp;month.</span></div>
+<div><span class="label">THE CAP</span><span class="small">At most 1 sponsor offer per&nbsp;member each&nbsp;month.</span></div>
 </div>
 </div>
 </section>
